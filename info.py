@@ -13,7 +13,7 @@ def is_enabled(value, default):
     else:
         return default
 
-SESSION = environ.get('SESSION', 'techifybots')
+SESSION = environ.get('SESSION', 'save_content_ak_bot')
 API_ID = int(environ.get('API_ID', '34446649'))
 API_HASH = environ.get('API_HASH', '8dc570c08d8e35e88fb9bfc73c65d7fa')
 BOT_TOKEN = environ.get('BOT_TOKEN', "8394096364:AAE4tBjfPfM4zGWK7fhArA_bVy6zianETKk")
