@@ -37,7 +37,7 @@ OWNER = int(os.environ.get("OWNER", "7892805795"))
 CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://t.me/log_channel_a')
 GROUP_LINK = environ.get('GROUP_LINK', 'https://t.me/anuj_group_channel')
 
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Anujofficial:Anujofficial@anuj.ml4aqxn.mongodb.net/?appName=Anuj")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Anujedit:Anujedit@cluster0.7cs2nhd.mongodb.net/?appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Anujofficial")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Anujofficial')
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False)
