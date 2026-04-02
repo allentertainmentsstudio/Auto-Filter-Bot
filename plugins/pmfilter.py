@@ -1253,7 +1253,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
     elif query.data == "donate":
         buttons = [[
-                InlineKeyboardButton('💳 ᴅᴏɴᴀᴛᴇ ɴᴏᴡ 💳', url='https://TechifyBots.github.io/PayWeb')
+                InlineKeyboardButton('💳 ᴅᴏɴᴀᴛᴇ ɴᴏᴡ 💳', url='https://i.ibb.co/tpDmH31k/7168219724-28145.jpg')
             ],[
                 InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='about')
             ]]
