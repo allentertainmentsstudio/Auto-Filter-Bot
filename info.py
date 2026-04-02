@@ -16,7 +16,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'save_content_ak_bot')
 API_ID = int(environ.get('API_ID', '34446649'))
 API_HASH = environ.get('API_HASH', '8dc570c08d8e35e88fb9bfc73c65d7fa')
-BOT_TOKEN = environ.get('BOT_TOKEN', "8394096364:AAE4tBjfPfM4zGWK7fhArA_bVy6zianETKk")
+BOT_TOKEN = environ.get('BOT_TOKEN', "8394096364:AAEgjyKaUUcb45iWyURlEgG_MRc-0sciv98")
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 INDEX_CAPTION = bool(environ.get('INDEX_CAPTION', False))
 COVER = bool(environ.get('COVER', False))
