@@ -14,37 +14,37 @@ def is_enabled(value, default):
         return default
 
 SESSION = environ.get('SESSION', 'techifybots')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '34446649'))
+API_HASH = environ.get('API_HASH', '8dc570c08d8e35e88fb9bfc73c65d7fa')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8394096364:AAE4tBjfPfM4zGWK7fhArA_bVy6zianETKk")
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
 INDEX_CAPTION = bool(environ.get('INDEX_CAPTION', False))
 COVER = bool(environ.get('COVER', False))
 PICS = (environ.get('PICS', 'https://i.ibb.co/PzZNZHF6/IMG-20251116-113905-254.jpg https://i.ibb.co/8npWSZ5T/pic.jpg')).split()
 MELCOW_PHOTO = environ.get("MELCOW_PHOTO", "https://i.ibb.co/2769f1rF/photo-2025-09-03-14-48-34-7548400762112442372.jpg")
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1255023013').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL', ''))
-PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', ''))
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7892805795').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1003515041061').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003515041061'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL', '-1003758676689'))
+PREMIUM_LOGS = int(environ.get('PREMIUM_LOGS', '-1003515041061'))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '').split()]
-AUTH_CHANNELS = [int(ch) for ch in environ.get("AUTH_CHANNELS", "").split() if ch and id_pattern.match(ch)]
-AUTH_REQ_CHANNELS = [int(ch) for ch in environ.get("AUTH_REQ_CHANNELS", "").split() if ch and id_pattern.match(ch)]
-REQST_CHANNEL = int(ch) if (ch := environ.get("REQST_CHANNEL", "")) and id_pattern.search(ch) else None
-SUPPORT_CHAT_ID = int(ch) if (ch := environ.get("SUPPORT_CHAT_ID", "")) and id_pattern.search(ch) else None
+AUTH_CHANNELS = [int(ch) for ch in environ.get("AUTH_CHANNELS", "-1003758676689").split() if ch and id_pattern.match(ch)]
+AUTH_REQ_CHANNELS = [int(ch) for ch in environ.get("AUTH_REQ_CHANNELS", "-1003758676689").split() if ch and id_pattern.match(ch)]
+REQST_CHANNEL = int(ch) if (ch := environ.get("REQST_CHANNEL", "-1003515041061")) and id_pattern.search(ch) else None
+SUPPORT_CHAT_ID = int(ch) if (ch := environ.get("SUPPORT_CHAT_ID", "-1003515041061")) and id_pattern.search(ch) else None
 
-OWNER = int(os.environ.get("OWNER", "1255023013"))
-CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://telegram.me/Techifybots')
-GROUP_LINK = environ.get('GROUP_LINK', 'https://telegram.me/TechifySupport')
+OWNER = int(os.environ.get("OWNER", "7892805795"))
+CHANNEL_LINK = environ.get('CHANNEL_LINK', 'https://t.me/log_channel_a')
+GROUP_LINK = environ.get('GROUP_LINK', 'https://t.me/auth_channel_a')
 
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Anujedit:Anujedit@cluster0.7cs2nhd.mongodb.net/?appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "filter")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'files')
 MULTIPLE_DB = is_enabled(os.environ.get('MULTIPLE_DB', "False"), False)
 DATABASE_URI2 = environ.get('DATABASE_URI2', "")
 
 UPDATE_NOTIFICATION = bool(environ.get('UPDATE_NOTIFICATION', False))
-UPDATE_CHANNEL = int(environ.get('UPDATE_CHANNEL', ''))
+UPDATE_CHANNEL = int(environ.get('UPDATE_CHANNEL', '-1003515041061'))
 IMAGE_FETCH = bool(environ.get('IMAGE_FETCH', True))
 LINK_PREVIEW = bool(environ.get('LINK_PREVIEW', False))
 ABOVE_PREVIEW = bool(environ.get('ABOVE_PREVIEW', False))
